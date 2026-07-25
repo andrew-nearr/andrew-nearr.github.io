@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buildings — Andrew Ji</title>
+  <meta name="description" content="Buildings Andrew Ji has helped bring into being.">
+  <style>
+    * { box-sizing: border-box; }
+
+    :root {
+      color-scheme: light;
+      --ink: #111111;
+      --muted: #6b6b6b;
+      --line: #dedede;
+      --paper: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    a { color: inherit; }
+
+    .back {
+      position: fixed;
+      z-index: 2;
+      top: 24px;
+      left: 24px;
+      font-size: 0.9rem;
+      text-decoration: none;
+      opacity: 0.45;
+      transition: opacity 180ms ease;
+    }
+
+    .back:hover,
+    .back:focus-visible {
+      opacity: 1;
+    }
+
+    main {
+      width: min(100% - 48px, 1120px);
+      margin: 0 auto;
+      padding: 112px 0 80px;
+    }
+
+    header {
+      margin-bottom: clamp(48px, 8vw, 96px);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 7vw, 6.8rem);
+      font-weight: 600;
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+    }
+
+    .intro {
+      max-width: 560px;
+      margin: 28px 0 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 1.6vw, 1.2rem);
+      line-height: 1.55;
+    }
+
+    .projects {
+      display: grid;
+      gap: clamp(52px, 8vw, 96px);
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: minmax(0, 1.7fr) minmax(230px, 0.8fr);
+      gap: clamp(24px, 5vw, 64px);
+      align-items: end;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    .project-photo {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      display: block;
+      object-fit: cover;
+      background: #f2f2f2;
+    }
+
+    .gallery {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      margin-top: 36px;
+    }
+
+    .gallery figure {
+      margin: 0;
+    }
+
+    .gallery figure:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      display: block;
+      object-fit: cover;
+    }
+
+    .gallery figcaption {
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 0.76rem;
+    }
+
+    .project-number {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(1.55rem, 3vw, 2.7rem);
+      line-height: 1.08;
+      letter-spacing: -0.035em;
+    }
+
+    address {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      font-style: normal;
+      line-height: 1.5;
+    }
+
+    .description {
+      margin: 24px 0 0;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin: 28px 0 0;
+      padding: 20px 0 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .meta dt {
+      color: var(--muted);
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .meta dd {
+      margin: 6px 0 0;
+      font-size: 0.9rem;
+    }
+
+    .empty-note {
+      padding: clamp(36px, 6vw, 72px) 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    @media (max-width: 760px) {
+      .back {
+        position: absolute;
+      }
+
+      main {
+        width: min(100% - 40px, 1120px);
+        padding-top: 96px;
+      }
+
+      .project {
+        grid-template-columns: 1fr;
+        align-items: start;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery figure:last-child {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="back" href="build.html" aria-label="Return to I Build sections">← I Build.</a>
+
+  <main>
+    <header>
+      <h1>Buildings</h1>
+      <p class="intro">A record of buildings I have helped bring into being with the teams beside me.</p>
+    </header>
+
+    <section class="projects" aria-label="Buildings">
+      <article class="project">
+        <img class="project-photo"
+          src="images/buildings/the-moon-27/exterior-rendering.jpeg"
+          alt="Architectural rendering of The Moon 27 at 42-38 27th Street in Long Island City">
+
+        <div>
+          <p class="project-number">Project 01 · In progress</p>
+          <h2>The Moon 27</h2>
+          <address>42-38 27th Street<br>Long Island City, NY 11101</address>
+          <p class="description">A contemporary mixed-use building in Long Island City, bringing ground-floor commercial space together with residences above. The design is defined by expansive windows, private balconies, and a landscaped roof terrace, creating light-filled homes within the changing skyline of Queens.</p>
+
+          <dl class="meta">
+            <div>
+              <dt>Type</dt>
+              <dd>Mixed-Use Building</dd>
+            </div>
+            <div>
+              <dt>Status</dt>
+              <dd>Under Construction</dd>
+            </div>
+            <div>
+              <dt>Expected completion</dt>
+              <dd>February 2027</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Long Island City, Queens</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="gallery" aria-label="The Moon 27 renderings">
+          <figure>
+            <img src="images/buildings/the-moon-27/living-kitchen-rendering.jpeg"
+              alt="Rendering of the open living, dining, and kitchen space at The Moon 27">
+            <figcaption>Living, dining &amp; kitchen</figcaption>
+          </figure>
+          <figure>
+            <img src="images/buildings/the-moon-27/bedroom-rendering.jpeg"
+              alt="Rendering of a bedroom at The Moon 27">
+            <figcaption>Bedroom</figcaption>
+          </figure>
+          <figure>
+            <img src="images/buildings/the-moon-27/roof-terrace-rendering.jpeg"
+              alt="Rendering of the landscaped roof terrace at The Moon 27">
+            <figcaption>Roof terrace</figcaption>
+          </figure>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
