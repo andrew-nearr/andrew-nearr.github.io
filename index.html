@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Andrew Ji</title>
-  <meta name="description" content="Andrew Ji — I build buildings, knowledge, people, and the future.">
+  <title>Andrew Huiqing Ji</title>
+  <meta name="description" content="Andrew Huiqing Ji — I Build.">
   <style>
     * { box-sizing: border-box; }
     body {
@@ -17,16 +17,29 @@
       background: #ffffff;
       color: #111111;
     }
-    main {
+    .entry {
       font-size: clamp(1.6rem, 4vw, 3.4rem);
       font-weight: 600;
       line-height: 1.25;
       text-align: center;
       letter-spacing: -0.02em;
+      color: inherit;
+      text-decoration: none;
+      transition: opacity 180ms ease;
+    }
+    .entry:hover,
+    .entry:focus-visible {
+      opacity: 0.55;
+    }
+    .entry:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 8px;
     }
   </style>
 </head>
 <body>
-  <main>I build.</main>
+  <main>
+    <a class="entry" href="build.html">I Build.</a>
+  </main>
 </body>
 </html>
