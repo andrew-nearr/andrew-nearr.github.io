@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I Build — Andrew Ji</title>
+  <meta name="description" content="Andrew Ji builds buildings, readings, writings, teams, family, and the future.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 48px 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #111111;
+    }
+    main {
+      width: min(100%, 680px);
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(0.55rem, 1.5vh, 1rem);
+    }
+    .section {
+      font-size: clamp(1.45rem, 3.5vw, 3rem);
+      font-weight: 600;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    .home {
+      position: fixed;
+      top: 24px;
+      left: 24px;
+      color: inherit;
+      font-size: 0.9rem;
+      text-decoration: none;
+      opacity: 0.45;
+      transition: opacity 180ms ease;
+    }
+    .home:hover,
+    .home:focus-visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <a class="home" href="index.html" aria-label="Return to home">← I Build.</a>
+  <main>
+    <nav aria-label="Main sections">
+      <span class="section">Buildings</span>
+      <span class="section">Readings</span>
+      <span class="section">Writings</span>
+      <span class="section">Teams</span>
+      <span class="section">Family</span>
+      <span class="section">Future</span>
+    </nav>
+  </main>
+</body>
+</html>
