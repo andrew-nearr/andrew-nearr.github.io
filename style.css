@@ -12,11 +12,11 @@ a{color:inherit}
 .section-nav{display:flex;flex-direction:column;align-items:center;gap:clamp(.5rem,1.4vh,.95rem)}
 .section-link{font-size:clamp(1.55rem,3.7vw,3.2rem);font-weight:600;letter-spacing:-.04em;line-height:1.05;text-decoration:none;transition:opacity 180ms ease}
 .section-link-muted{color:#bbb8b0}
-.buildings-page,.readings-page{width:min(100% - 48px,1180px);margin:0 auto;padding:116px 0 100px}
-.buildings-header,.readings-header{margin-bottom:clamp(54px,9vw,110px)}
-.eyebrow,.project-number,.reading-number{color:var(--muted);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
+.buildings-page,.readings-page,.family-page{width:min(100% - 48px,1180px);margin:0 auto;padding:116px 0 100px}
+.buildings-header,.readings-header,.family-header{margin-bottom:clamp(54px,9vw,110px)}
+.eyebrow,.project-number,.reading-number,.family-number{color:var(--muted);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
 .eyebrow,.project-number{margin:0 0 18px}
-.buildings-header h1,.readings-header h1{margin:0;font-size:clamp(4rem,11vw,9.5rem);font-weight:600;letter-spacing:-.075em;line-height:.85}
+.buildings-header h1,.readings-header h1,.family-header h1{margin:0;font-size:clamp(4rem,11vw,9.5rem);font-weight:600;letter-spacing:-.075em;line-height:.85}
 .buildings-intro,.readings-intro{max-width:520px;margin:38px 0 0 auto;color:var(--muted);font-size:clamp(1rem,1.6vw,1.25rem);line-height:1.6}
 .project,.reading,.reading-shelf{padding-top:22px;border-top:1px solid var(--line)}
 .project+.project{margin-top:clamp(100px,16vw,190px)}
@@ -71,9 +71,31 @@ a{color:inherit}
 .book-cover-detail{margin:0}
 .book-cover-detail img{box-shadow:0 18px 46px rgb(20 18 12/14%)}
 .book-cover-detail figcaption{margin-top:12px;color:var(--muted);font-size:.66rem;line-height:1.5}
+.family-intro{max-width:760px;margin:40px 0 0 auto;color:var(--muted);font-size:clamp(1.25rem,2.4vw,2rem);letter-spacing:-.02em;line-height:1.45}
+.journey,.family-section{display:grid;grid-template-columns:minmax(210px,.56fr) minmax(0,1.44fr);gap:clamp(44px,9vw,130px);padding:26px 0 clamp(92px,14vw,170px);border-top:1px solid var(--line)}
+.section-marker{align-self:start;position:sticky;top:30px}
+.section-marker h2{max-width:300px;margin:18px 0 0;font-size:clamp(2rem,4vw,4rem);font-weight:600;letter-spacing:-.06em;line-height:.95}
+.family-number{margin:0}
+.journey-route{display:grid;grid-column:2;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--ink)}
+.journey-route div{min-height:150px;padding:18px 24px 24px 0;border-bottom:1px solid var(--line)}
+.journey-route div:nth-child(odd){border-right:1px solid var(--line)}
+.journey-route div:nth-child(even){padding-left:24px}
+.journey-route span,.generation-location{display:block;color:var(--muted);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase}
+.journey-route strong{display:block;max-width:340px;margin-top:34px;font-size:clamp(1.3rem,2.3vw,2rem);letter-spacing:-.035em;line-height:1.1}
+.family-copy{grid-column:2;max-width:770px}
+.family-copy-lead{margin-top:clamp(40px,7vw,80px)}
+.family-copy p{margin:0;color:var(--muted);font-size:clamp(1.08rem,1.7vw,1.35rem);line-height:1.72}
+.family-copy p+p{margin-top:1.2em}
+.family-copy .family-statement{margin-bottom:34px;color:var(--ink);font-size:clamp(2.4rem,5vw,5.2rem);font-weight:600;letter-spacing:-.065em;line-height:.92}
+.generation-grid{display:grid;grid-column:2;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(30px,5vw,70px)}
+.generation-grid article{padding-top:18px;border-top:1px solid var(--ink)}
+.generation-grid h3{margin:36px 0 24px;font-size:clamp(1.8rem,3.2vw,3.2rem);font-weight:600;letter-spacing:-.055em;line-height:.98}
+.generation-grid article p:last-child,.generation-note{color:var(--muted);font-size:1rem;line-height:1.7}
+.generation-note{grid-column:2;max-width:730px;margin:54px 0 0}
+.family-meaning blockquote{grid-column:2;max-width:820px;margin:0 0 clamp(54px,8vw,92px);font-size:clamp(2.6rem,6vw,6.2rem);font-weight:600;letter-spacing:-.07em;line-height:.95}
 @media(max-width:760px){
   .corner-link{position:absolute}
-  .buildings-page,.readings-page{width:min(100% - 32px,1180px);padding-top:92px}
+  .buildings-page,.readings-page,.family-page{width:min(100% - 32px,1180px);padding-top:92px}
   .buildings-intro,.readings-intro{margin-left:0}
   .project-heading,.project-story,.project-gallery,.reading,.reading-shelf,.book-card{grid-template-columns:1fr}
   .project-heading{align-items:start}
@@ -86,5 +108,12 @@ a{color:inherit}
   .book-cover{max-width:235px}
   .book-spine{min-height:260px}
   .book-meta{grid-template-columns:1fr}
+  .family-intro{margin-left:0}
+  .journey,.family-section{grid-template-columns:1fr;gap:44px}
+  .section-marker{position:static}
+  .journey-route,.family-copy,.generation-grid,.generation-note,.family-meaning blockquote{grid-column:1}
+  .journey-route,.generation-grid{grid-template-columns:1fr}
+  .journey-route div:nth-child(odd){border-right:0}
+  .journey-route div:nth-child(even){padding-left:0}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
