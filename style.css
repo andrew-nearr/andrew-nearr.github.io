@@ -12,12 +12,12 @@ a{color:inherit}
 .section-nav{display:flex;flex-direction:column;align-items:center;gap:clamp(.5rem,1.4vh,.95rem)}
 .section-link{font-size:clamp(1.55rem,3.7vw,3.2rem);font-weight:600;letter-spacing:-.04em;line-height:1.05;text-decoration:none;transition:opacity 180ms ease}
 .section-link-muted{color:#bbb8b0}
-.buildings-page,.readings-page,.family-page,.writings-page,.future-page{width:min(100% - 48px,1180px);margin:0 auto;padding:116px 0 100px}
-.buildings-header,.readings-header,.family-header,.writings-header,.future-header{margin-bottom:clamp(54px,9vw,110px)}
+.buildings-page,.readings-page,.family-page,.writings-page,.future-page,.teams-page{width:min(100% - 48px,1180px);margin:0 auto;padding:116px 0 100px}
+.buildings-header,.readings-header,.family-header,.writings-header,.future-header,.teams-header{margin-bottom:clamp(54px,9vw,110px)}
 .eyebrow,.project-number,.reading-number,.family-number{color:var(--muted);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
 .eyebrow,.project-number{margin:0 0 18px}
-.buildings-header h1,.readings-header h1,.family-header h1,.writings-header h1,.future-header h1{margin:0;font-size:clamp(4rem,11vw,9.5rem);font-weight:600;letter-spacing:-.075em;line-height:.85}
-.buildings-intro,.readings-intro,.writings-intro{max-width:520px;margin:38px 0 0 auto;color:var(--muted);font-size:clamp(1rem,1.6vw,1.25rem);line-height:1.6}
+.buildings-header h1,.readings-header h1,.family-header h1,.writings-header h1,.future-header h1,.teams-header h1{margin:0;font-size:clamp(4rem,11vw,9.5rem);font-weight:600;letter-spacing:-.075em;line-height:.85}
+.buildings-intro,.readings-intro,.writings-intro,.teams-intro{max-width:620px;margin:38px 0 0 auto;color:var(--muted);font-size:clamp(1rem,1.6vw,1.25rem);line-height:1.6}
 .project,.reading,.reading-shelf{padding-top:22px;border-top:1px solid var(--line)}
 .project+.project{margin-top:clamp(100px,16vw,190px)}
 .project-hero,.gallery-image{position:relative;width:100%;aspect-ratio:16/10;overflow:hidden;background:#e8e6df}
@@ -126,10 +126,22 @@ a{color:inherit}
 .future-lead{max-width:880px;margin:0;font-size:clamp(2.6rem,6.2vw,6.3rem);font-weight:600;letter-spacing:-.065em;line-height:.98}
 .future-motto{margin:0;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-family:Georgia,serif;font-size:clamp(1rem,1.6vw,1.25rem);line-height:1.65}
 .future-motto span{display:block;margin-top:12px;color:var(--ink);font-family:"Songti SC","STSong","Noto Serif CJK SC",Georgia,serif;font-size:.9em}
+.leader-list{border-top:1px solid var(--ink)}
+.leader{display:grid;grid-template-columns:minmax(240px,.72fr) minmax(0,1.28fr);gap:clamp(46px,9vw,130px);padding:clamp(42px,7vw,78px) 0;border-bottom:1px solid var(--line)}
+.leader:nth-child(even) .leader-portrait{grid-column:2}
+.leader:nth-child(even) .leader-copy{grid-column:1;grid-row:1}
+.leader-portrait{align-self:start;margin:0;overflow:hidden;background:#e8e6df}
+.leader-portrait img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(100%);transition:filter 240ms ease}
+.leader:hover .leader-portrait img{filter:grayscale(0)}
+.leader-copy{align-self:center}
+.leader-role{margin:0 0 18px;color:var(--muted);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase}
+.leader-copy h2{margin:0;font-size:clamp(2.8rem,6vw,6rem);font-weight:600;letter-spacing:-.07em;line-height:.88}
+.leader-statement{max-width:690px;margin:clamp(34px,5vw,58px) 0 0;font-size:clamp(1.28rem,2.35vw,2rem);letter-spacing:-.025em;line-height:1.45}
+.leader-detail{max-width:680px;margin:24px 0 0;color:var(--muted);font-size:clamp(.98rem,1.35vw,1.15rem);line-height:1.75}
 @media(max-width:760px){
   .corner-link{position:absolute}
-  .buildings-page,.readings-page,.family-page,.writings-page,.future-page{width:min(100% - 32px,1180px);padding-top:92px}
-  .buildings-intro,.readings-intro,.writings-intro{margin-left:0}
+  .buildings-page,.readings-page,.family-page,.writings-page,.future-page,.teams-page{width:min(100% - 32px,1180px);padding-top:92px}
+  .buildings-intro,.readings-intro,.writings-intro,.teams-intro{margin-left:0}
   .project-heading,.project-story,.project-gallery,.reading,.reading-shelf,.book-card{grid-template-columns:1fr}
   .project-heading{align-items:start}
   .project-heading address{text-align:left}
@@ -153,5 +165,8 @@ a{color:inherit}
   .writing-detail-page{width:min(100% - 32px,940px)}
   .writing-meta{flex-wrap:wrap}
   .future-statement{grid-template-columns:1fr;align-items:start}
+  .leader{grid-template-columns:1fr;gap:34px}
+  .leader:nth-child(even) .leader-portrait,.leader:nth-child(even) .leader-copy{grid-column:1;grid-row:auto}
+  .leader-portrait{max-width:420px}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
