@@ -22,6 +22,8 @@ a{color:inherit}
 .project+.project{margin-top:clamp(100px,16vw,190px)}
 .project-hero,.gallery-image{position:relative;width:100%;aspect-ratio:16/10;overflow:hidden;background:#e8e6df}
 .project-hero img,.gallery-image img{display:block;width:100%;height:100%;object-fit:cover}
+.project-hero-portrait{width:min(100%,620px);aspect-ratio:662/1186;margin:0 auto}
+.project-hero-portrait img{object-fit:contain}
 .project-heading{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;padding:34px 0 30px;border-bottom:1px solid var(--line)}
 .project-heading h2{margin:0;font-size:clamp(2.6rem,6vw,5.8rem);font-weight:600;letter-spacing:-.065em;line-height:.9}
 .project-heading address{color:var(--muted);font-size:.9rem;font-style:normal;line-height:1.55;text-align:right}
