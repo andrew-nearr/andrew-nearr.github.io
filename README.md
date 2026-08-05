@@ -1,2 +1,2 @@
 # andrew-nearr.github.io
-Personal website of Andrew Ji
+Personal website of Andrew Huiqing Ji

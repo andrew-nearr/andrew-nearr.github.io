@@ -12,11 +12,20 @@ a{color:inherit}
 .section-nav{display:flex;flex-direction:column;align-items:center;gap:clamp(.5rem,1.4vh,.95rem)}
 .section-link{font-size:clamp(1.55rem,3.7vw,3.2rem);font-weight:600;letter-spacing:-.04em;line-height:1.05;text-decoration:none;transition:opacity 180ms ease}
 .section-link-muted{color:#bbb8b0}
-.buildings-page,.readings-page,.family-page,.writings-page,.notes-page,.future-page,.teams-page{width:min(100% - 48px,1180px);margin:0 auto;padding:116px 0 100px}
-.buildings-header,.readings-header,.family-header,.writings-header,.notes-header,.future-header,.teams-header{margin-bottom:clamp(54px,9vw,110px)}
+.buildings-page,.readings-page,.family-page,.writings-page,.notes-page,.future-page,.teams-page,.about-page{width:min(100% - 48px,1180px);margin:0 auto;padding:116px 0 100px}
+.buildings-header,.readings-header,.family-header,.writings-header,.notes-header,.future-header,.teams-header,.about-header{margin-bottom:clamp(54px,9vw,110px)}
 .eyebrow,.project-number,.reading-number,.family-number{color:var(--muted);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
 .eyebrow,.project-number{margin:0 0 18px}
-.buildings-header h1,.readings-header h1,.family-header h1,.writings-header h1,.notes-header h1,.future-header h1,.teams-header h1{margin:0;font-size:clamp(4rem,11vw,9.5rem);font-weight:600;letter-spacing:-.075em;line-height:.85}
+.buildings-header h1,.readings-header h1,.family-header h1,.writings-header h1,.notes-header h1,.future-header h1,.teams-header h1,.about-header h1{margin:0;font-size:clamp(4rem,11vw,9.5rem);font-weight:600;letter-spacing:-.075em;line-height:.85}
+.about-name-cn{display:block;margin-top:20px;color:var(--muted);font-family:"Songti SC","STSong","Noto Serif CJK SC",Georgia,serif;font-size:clamp(1.2rem,2vw,1.7rem);font-weight:400;letter-spacing:.08em}
+.about-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(50px,10vw,140px);padding-top:28px;border-top:1px solid var(--ink)}
+.about-language{max-width:700px}
+.about-language-label{margin:0 0 38px;color:var(--muted);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase}
+.about-language p{margin:0;font-size:clamp(1.08rem,1.7vw,1.32rem);line-height:1.8}
+.about-language p+p{margin-top:1.25em}
+.about-language-cn{font-family:"Songti SC","STSong","Noto Serif CJK SC",Georgia,serif}
+.about-language-en{color:var(--muted);font-family:Georgia,serif}
+.about-language .about-definition{margin-top:2.5em;color:var(--ink);font-family:Arial,"Helvetica Neue",sans-serif;font-size:clamp(1.55rem,2.8vw,2.5rem);font-weight:600;letter-spacing:-.035em;line-height:1.25}
 .buildings-intro,.readings-intro,.writings-intro,.notes-intro,.teams-intro{max-width:620px;margin:38px 0 0 auto;color:var(--muted);font-size:clamp(1rem,1.6vw,1.25rem);line-height:1.6}
 .project,.reading,.reading-shelf{padding-top:22px;border-top:1px solid var(--line)}
 .project+.project{margin-top:clamp(100px,16vw,190px)}
@@ -149,7 +158,8 @@ a{color:inherit}
 .leader-detail{max-width:680px;margin:24px 0 0;color:var(--muted);font-size:clamp(.98rem,1.35vw,1.15rem);line-height:1.75}
 @media(max-width:760px){
   .corner-link{position:absolute}
-  .buildings-page,.readings-page,.family-page,.writings-page,.notes-page,.future-page,.teams-page{width:min(100% - 32px,1180px);padding-top:92px}
+  .buildings-page,.readings-page,.family-page,.writings-page,.notes-page,.future-page,.teams-page,.about-page{width:min(100% - 32px,1180px);padding-top:92px}
+  .about-content{grid-template-columns:1fr;gap:72px}
   .buildings-intro,.readings-intro,.writings-intro,.notes-intro,.teams-intro{margin-left:0}
   .note-entry{grid-template-columns:1fr;gap:24px}
   .project-heading,.project-story,.project-gallery,.reading,.reading-shelf,.book-card{grid-template-columns:1fr}
