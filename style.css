@@ -19,6 +19,7 @@ a{color:inherit}
 .buildings-header h1,.readings-header h1,.family-header h1,.writings-header h1,.notes-header h1,.future-header h1,.teams-header h1,.about-header h1{margin:0;font-size:clamp(4rem,11vw,9.5rem);font-weight:600;letter-spacing:-.075em;line-height:.85}
 .about-name-cn{display:block;margin-top:20px;color:var(--muted);font-family:"Songti SC","STSong","Noto Serif CJK SC",Georgia,serif;font-size:clamp(1.2rem,2vw,1.7rem);font-weight:400;letter-spacing:.08em}
 .about-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(50px,10vw,140px);padding-top:28px;border-top:1px solid var(--ink)}
+.about-content-single{grid-template-columns:minmax(0,700px)}
 .about-language{max-width:700px}
 .about-language-label{margin:0 0 38px;color:var(--muted);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase}
 .about-language p{margin:0;font-size:clamp(1.08rem,1.7vw,1.32rem);line-height:1.8}
