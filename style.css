@@ -133,6 +133,8 @@ a{color:inherit}
 .note-copy h2{margin:0 0 1.2em;font-family:Arial,"Helvetica Neue",sans-serif;font-size:clamp(1.35rem,2.3vw,1.7rem);font-weight:500;letter-spacing:.02em}
 .note-copy p{margin:0;font-size:clamp(1.12rem,2vw,1.35rem);line-height:1.95}
 .note-copy p+p{margin-top:1.1em}
+.note-context{margin-top:clamp(28px,4vw,42px);padding-top:24px;border-top:1px solid var(--line);color:var(--muted);font-style:italic}
+.note-context p{font-size:clamp(.9rem,1.45vw,1.05rem);line-height:1.8}
 .note-copy-translation{grid-column:2;margin-top:clamp(26px,4vw,44px);color:var(--muted);font-family:Georgia,serif}
 .writing-image-idea{margin-top:clamp(72px,11vw,120px);padding:clamp(34px,6vw,70px);background:#171717;color:var(--paper)}
 .writing-image-idea .eyebrow{color:#aaa}
