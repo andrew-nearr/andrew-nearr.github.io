@@ -38,6 +38,22 @@ a{color:inherit}
 .about-portrait{align-self:start;margin:0}
 .about-portrait img{display:block;width:100%;height:auto;background:#e8e6df}
 .about-portrait figcaption{max-width:520px;margin-top:16px;color:var(--muted);font-family:Georgia,serif;font-size:clamp(.76rem,1vw,.88rem);font-style:italic;line-height:1.65}
+.about-credit-link{color:inherit;text-decoration-color:rgba(112,109,101,.45);text-decoration-thickness:1px;text-underline-offset:.22em;transition:color .2s ease,text-decoration-color .2s ease}
+.about-credit-link:hover,.about-credit-link:focus-visible{color:var(--ink);text-decoration-color:var(--ink)}
+.rongyan-page{width:min(100% - 48px,1180px);margin:0 auto;padding:116px 0 100px}
+.rongyan-header{margin-bottom:clamp(54px,9vw,100px)}
+.rongyan-header h1{max-width:1100px;margin:18px 0 0;font-size:clamp(3rem,7.2vw,7.1rem);font-weight:600;letter-spacing:-.065em;line-height:.92}
+.rongyan-feature{padding-top:28px;border-top:1px solid var(--ink)}
+.rongyan-copy{max-width:760px;margin-left:auto}
+.rongyan-source{margin:0 0 30px;color:var(--muted);font-size:.76rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.rongyan-copy p:not(.rongyan-source){margin:0;color:var(--muted);font-family:Georgia,serif;font-size:clamp(1.08rem,1.8vw,1.42rem);line-height:1.65}
+.rongyan-copy p+p{margin-top:22px}
+.rongyan-copy .rongyan-lead{color:var(--ink)}
+.rongyan-facebook-link{display:inline-block;margin-top:34px;color:var(--ink);font-size:.86rem;font-weight:600;text-decoration-thickness:1px;text-underline-offset:.28em}
+.rongyan-screenshot{margin:clamp(58px,8vw,92px) 0 0}
+.rongyan-screenshot a,.rongyan-screenshot img{display:block}
+.rongyan-screenshot img{width:100%;height:auto;border:1px solid rgba(20,20,20,.12)}
+.rongyan-screenshot figcaption{margin-top:13px;color:var(--muted);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
 .buildings-intro,.readings-intro,.writings-intro,.notes-intro,.teams-intro{max-width:620px;margin:38px 0 0 auto;color:var(--muted);font-size:clamp(1rem,1.6vw,1.25rem);line-height:1.6}
 .project,.reading,.reading-shelf{padding-top:22px;border-top:1px solid var(--line)}
 .project+.project{margin-top:clamp(100px,16vw,190px)}
@@ -178,6 +194,8 @@ a{color:inherit}
   .corner-link{position:absolute}
   .buildings-page,.readings-page,.family-page,.writings-page,.notes-page,.future-page,.teams-page,.about-page{width:min(100% - 32px,1180px);padding-top:92px}
   .about-content{grid-template-columns:1fr;gap:72px}
+  .rongyan-page{width:min(100% - 32px,1180px);padding-top:92px}
+  .rongyan-header h1 br{display:none}
   .buildings-intro,.readings-intro,.writings-intro,.notes-intro,.teams-intro{margin-left:0}
   .note-entry{grid-template-columns:1fr;gap:24px}
   .note-copy-translation{grid-column:1;margin-top:8px}
