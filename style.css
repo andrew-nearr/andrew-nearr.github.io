@@ -97,6 +97,7 @@ a{color:inherit}
 .book-card-content h2{max-width:780px;margin:0;font-size:clamp(2.8rem,6.5vw,6.4rem);font-weight:600;letter-spacing:-.075em;line-height:.86}
 .book-card-author{margin:32px 0 0;color:var(--muted);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
 .book-card-note{max-width:650px;margin:38px 0 0;font-size:clamp(1.15rem,2vw,1.6rem);line-height:1.45}
+.book-card-note-translation{max-width:650px;margin:14px 0 0;color:var(--muted);font-family:Georgia,"Times New Roman",serif;font-size:clamp(.92rem,1.35vw,1.08rem);font-style:italic;line-height:1.62}
 .book-card-link{display:inline-block;margin-top:38px;padding-bottom:5px;border-bottom:1px solid currentColor;font-size:.82rem}
 .book-cover img{transition:transform 260ms ease}
 .book-cover-landscape{max-width:360px}
