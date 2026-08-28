@@ -27,9 +27,11 @@ a{color:inherit}
 .eyebrow,.project-number{margin:0 0 18px}
 .buildings-header h1,.readings-header h1,.family-header h1,.writings-header h1,.notes-header h1,.future-header h1,.teams-header h1,.about-header h1{margin:0;font-size:clamp(4rem,11vw,9.5rem);font-weight:600;letter-spacing:-.075em;line-height:.85}
 .about-name-cn{display:block;margin-top:20px;color:var(--muted);font-family:"Songti SC","STSong","Noto Serif CJK SC",Georgia,serif;font-size:clamp(1.2rem,2vw,1.7rem);font-weight:400;letter-spacing:.08em}
-.about-email{margin:16px 0 0;color:var(--muted);font-size:clamp(.78rem,1.15vw,.92rem);letter-spacing:.025em}
-.about-email a{text-decoration-color:rgba(112,109,101,.42);text-decoration-thickness:1px;text-underline-offset:.24em;transition:color .2s ease,text-decoration-color .2s ease}
-.about-email a:hover,.about-email a:focus-visible{color:var(--ink);text-decoration-color:var(--ink)}
+.about-social,.about-email{color:var(--muted);font-size:clamp(.78rem,1.15vw,.92rem);letter-spacing:.025em}
+.about-social{margin:16px 0 0}
+.about-email{margin:8px 0 0}
+.about-social a,.about-email a{text-decoration-color:rgba(112,109,101,.42);text-decoration-thickness:1px;text-underline-offset:.24em;transition:color .2s ease,text-decoration-color .2s ease}
+.about-social a:hover,.about-social a:focus-visible,.about-email a:hover,.about-email a:focus-visible{color:var(--ink);text-decoration-color:var(--ink)}
 .about-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(50px,10vw,140px);padding-top:28px;border-top:1px solid var(--ink)}
 .about-content-single{grid-template-columns:minmax(0,700px)}
 .about-language{max-width:700px}
